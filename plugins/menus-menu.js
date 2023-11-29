@@ -21,20 +21,23 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = ` 𝙏𝙃𝙀 𝙈𝙔𝙎𝙏𝙄𝘾 - 𝘽𝙊𝙏
+    const str = ` 𝙅𝙤𝙨𝙨 𝘽𝙤𝙩  🤺 𝙗𝙮 @𝙖𝙣𝙘𝙚𝙡𝙯𝙯𝙯
+ ▢ *Ey , Hola JossLovers, ${taguser} te presento el joss bot*
 
- ▢ *Hola,* ${taguser}
-
- ▢ *Prop.:* Bruno Sobrino
- ▢ *WA:* +5219992095479
- ▢ *Bot 1:* +5219991402134
- ▢ *Bot 2:* +5219993404349
- ▢ *PayPal:* paypal.me/TheShadowBrokers133
-
+ ▢ *Owner:* 𝙅𝙤𝙨𝙨 🤺
+ ▢ *WA:* wa.me/56986469687
+ ▢ *IG:* @ancelzzz
+ ▢ *PayPal:* paypal.me/ancelzzz
  ▢ *Uptime:* ${uptime}
  ▢ *Usuarios regs:* ${rtotalreg}
  ▢ *Usuarios totales:* ${rtotal}
  ▢ *Tipo de bot:* ${(conn.user.jid == global.conn.user.jid ? '' : `Sub-bot de:\n ▢ +${global.conn.user.jid.split`@`[0]}`) || 'No es sub-bot'}
+
+ *« COMPRAR BOT »*
+
+
+ ▢ _${usedPrefix}Yape *< Comprar Bot >*_
+ ▢ _${usedPrefix}Vendedores *< Comprar Bot >*_
 
 
  _*< INFO. DEL USUARIO />*_
@@ -43,7 +46,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
  ▢ *Experiencia:* ${exp}
  ▢ *Rango:* ${role}
  ▢ *Diamantes:* ${limit}
- ▢ *MysticCoins:* ${money}
+ ▢ *JossCoins:* ${money}
  ▢ *Tokens:* ${joincount}
  ▢ *Premium:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
  ${readMore}
@@ -71,15 +74,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   ▢ _bot_ (sin prefijo)
 
 
- _*< SUB-BOTS />*_
-
-  ▢ _${usedPrefix}serbot --code_
-  ▢ _${usedPrefix}serbot_
-  ▢ _${usedPrefix}deletebot_
-  ▢ _${usedPrefix}token_
-  ▢ _${usedPrefix}stop_
-  ▢ _${usedPrefix}bots_
-  ▢
   ▢ _${usedPrefix}enable restrict_
   ▢ _${usedPrefix}disable restrict_
   ▢ _${usedPrefix}enable autoread_

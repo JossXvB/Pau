@@ -22,44 +22,39 @@ const handler = async (m, { conn, usedPrefix }) => {
   const old = performance.now();
   const neww = performance.now();
   const speed = (neww - old).toFixed(7);
-  const wm = 'The Mystic Bot';
-  const info = ` _*< INFO - ESTADO />*_
-
- ▢ *Prop.:* Bruno Sobrino
- ▢ *WA:* +5219992095479
- ▢ *Bot 1:* +5219991402134
- ▢ *Bot 2:* +5219993404349
- ▢ *PayPal:* paypal.me/TheShadowBrokers133
- 
- ▢ *Usuarios regs.:* ${totalusrReg}
- ▢ *Usuarios totales:* ${totalusr}
- ▢ *Prefijo:* ${usedPrefix}
- ▢ *Uptime:* ${uptime}
- ▢ *Ping:* ${speed}
- ▢ *Modo:* ${self ? "privado" : "público"}
- ▢ *Tipo de bot:* ${(conn.user.jid == global.conn.user.jid ? '' : `Sub-bot de:\n ▢ +${global.conn.user.jid.split`@`[0]}`) || 'No es sub-bot'}
- 
- ▢ *Chats privados:* ${chats.length - groups.length}
- ▢ *Grupos:* ${groups.length}
- ▢ *Chats totales:* ${chats.length}
- 
- ▢ *Autoread:* ${autoread ? "activo" : "desactivado"}
- ▢ *Restrict:* ${restrict ? "activo" : "desactivado"}
- ▢ *PCOnly:* ${pconly ? "activado" : "desactivado"}
- ▢ *GPOnly:* ${gconly ? "activado" : "desactivado"}
- ▢ *AntiPrivado:* ${antiprivado ? "activado" : "desactivado"}
- ▢ *AntiLlamada:* ${antiCall ? "activado" : "desactivado"}
- ▢ *ModeJadiBot:* ${modejadibot ? "activado" : "desactivado"}`.trim();
+  const wm = '𝗝𝗼𝘀𝘀 𝗕𝗼𝘁  🤺';
+  const info = `╠═〘 𝐈𝐍𝐅𝐎 𝐃𝐄𝐋 𝐁𝐎𝐓 〙 ═
+  ╠
+  ╠➥ [🤴🏻] 𝙲𝚁𝙴𝙰𝙳𝙾𝚁: *𝕵𝖔𝖘𝖘 🏴‍☠️*
+  ╠➥ [#️⃣] 𝙽𝚄𝙼𝙴𝚁𝙾: *+56 9 8646 9687*
+  ╠➥ [🎳] 𝙿𝚁𝙴𝙵𝙸𝙹𝙾: *${usedPrefix}*
+  ╠➥ [🔐] 𝙲𝙷𝙰𝚃𝚂 𝙿𝚁𝙸𝚅𝙰𝙳𝙾𝚂: *${chats.length - groups.length}*
+  ╠➥ [🦜] 𝙲𝙷𝙰𝚃𝚂 𝙳𝙴 𝙶𝚁𝚄𝙿𝙾𝚂: *${groups.length}* 
+  ╠➥ [💡] 𝙲𝙷𝙰𝚃𝚂 𝚃𝙾𝚃𝙰𝙻𝙴𝚂: *${chats.length}* 
+  ╠➥ [🚀] 𝙰𝙲𝚃𝙸𝚅𝙸𝙳𝙰𝙳: *${uptime}*
+  ╠➥ [🎩] 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂: *${totalreg} 𝚗𝚞𝚖𝚎𝚛𝚘𝚜*
+  ╠➥ [☑️] 𝙰𝚄𝚃𝙾𝚁𝙴𝙰𝙳: ${autoread ? "*𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*" : "*𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*"}
+  ╠➥ [❗] 𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃: ${restrict ? "*𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*" : "*𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*"} 
+  ╠➥ [💬] 𝙿𝙲𝙾𝙽𝙻𝚈: ${pconly ? "*𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*" : "*𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*"}
+  ╠➥ [🏢] 𝙶𝙲𝙾𝙽𝙻𝚈: ${gconly ? "*𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*" : "*𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*"}
+  ╠➥ [🌎] 𝙼𝙾𝙳𝙾: ${self ? "*𝚙𝚛𝚒𝚟𝚊𝚍𝚘*" : "*𝚙𝚞𝚋𝚕𝚒𝚌𝚘*"}
+  ╠➥ [💬] 𝙰𝙽𝚃𝙸𝙿𝚁𝙸𝚅𝙰𝙳𝙾: ${antiprivado ? "*𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*" : "*𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*"}
+  ╠➥ [🤖] 𝙼𝙾𝙳𝙴𝙹𝙰𝙳𝙸𝙱𝙾𝚃: ${modejadibot ? "*𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*" : "*𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*"}
+  ╠➥ [📵] 𝙰𝙽𝚃𝙸𝙻𝙻𝙰𝙼𝙰𝙳𝙰: ${antiCall ? "*𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*" : "*𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘*"}
+  ╠➥ [👨‍🦯] 𝚅𝙴𝙻𝙾𝙲𝙸𝙳𝙰𝙳: 
+  ╠  *${speed} ms* 
+  ╠
+  ╠═〘 𝕵𝖔𝖘𝖘 𝕭𝖔𝖙 🏴‍☠️ 〙`.trim();
 conn.sendMessage(m.chat, {
   contextInfo: {
     forwardingScore: 200,
     isForwarded: true,
     externalAdReply: {
       mediaType: 2,
-      title: "By Bruno Sobrino",
+      title: "By ancelzzz",
       body: wm,
       thumbnail: imagen1,
-      sourceUrl: "https://www.youtube.com/channel/UCSTDMKjbm-EmEovkygX-lCA",
+      sourceUrl: "https://www.instagram.com/ancelzzz/",
     },
   },
   caption: info,
