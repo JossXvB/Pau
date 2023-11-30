@@ -22,6 +22,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = ` 𝙅𝙤𝙨𝙨 𝘽𝙤𝙩  🤺 𝙗𝙮 @𝙖𝙣𝙘𝙚𝙡𝙯𝙯𝙯
+
  ▢ *Ey , Hola JossLovers, ${taguser} te presento el joss bot*
 
  ▢ *Owner:* 𝙅𝙤𝙨𝙨 🤺
@@ -31,12 +32,11 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
  ▢ *Uptime:* ${uptime}
  ▢ *Usuarios regs:* ${rtotalreg}
  ▢ *Usuarios totales:* ${rtotal}
- ▢ *Tipo de bot:* ${(conn.user.jid == global.conn.user.jid ? '' : `Sub-bot de:\n ▢ +${global.conn.user.jid.split`@`[0]}`) || 'No es sub-bot'}
+
 
  *« COMPRAR BOT »*
 
-
- ▢ _${usedPrefix}Yape *< Comprar Bot >*_
+ ▢ _${usedPrefix}Paypal *< Comprar Bot >*_
  ▢ _${usedPrefix}Vendedores *< Comprar Bot >*_
 
 
