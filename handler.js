@@ -1184,8 +1184,7 @@ const messageText = `
 —◉ *Aviso ${messageNumber}/3 (Total: 3)*
 —◉ ${user.bannedReason ? `\n*Motivo:* ${user.bannedReason}` : '*Motivo:* Sin especificar'}
 —◉ *Si consideras que esto es un error y cuentas con pruebas, puedes comunicarte con el propietario del Bot para apelar la suspensión.*
-—◉ *Contacto para apelaciones:* wa.me/5698646968
-╚═════════════════════╝
+—◉ *Contacto para apelaciones:* wa.me/56972062866
                `.trim();
               m.reply(messageText);
               user.bannedMessageCount++;
@@ -1529,7 +1528,7 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
     
 *■ Para desactivar esta función, escribe el comando:*
 *—◉ #disable antidelete*
-┗━━━━━━━━━⬣  𝕵𝖔𝖘𝖘 𝕭𝖔𝖙 🏴‍☠️  ⬣━━━━━━━━━`.trim();
+┗━━━━━━━━━⬣ 𝙋𝙖𝙪𝙡𝙞𝙣𝙖 𝙎𝙩𝙤𝙧𝙚 💗  ⬣━━━━━━━━━`.trim();
         await mconn.conn.sendMessage(msg.chat, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
         mconn.conn.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
@@ -1551,7 +1550,7 @@ global.dfail = (type, m, conn) => {
     restrict: '*[ ℹ️ ] Este comando fue desactivado por el propietario del bot.*',
   }[type];
   const aa = {quoted: m, userJid: conn.user.jid};
-  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '*[ ⚠ ] Advertencia*', body: '𝕵𝖔𝖘𝖘🩸', thumbnail: imagen1, sourceUrl: 'https://www.instagram.com/ancelzzz/'}}}}, aa);
+  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '*[ ⚠ ] Advertencia*', body: '𝙋𝙖𝙪𝙡𝙞𝙣𝙖 𝙎𝙩𝙤𝙧𝙚 💗', thumbnail: imagen1, sourceUrl: 'https://www.instagram.com/paulina.storee/'}}}}, aa);
   if (msg) return conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id});
 };
 
