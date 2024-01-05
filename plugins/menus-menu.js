@@ -21,14 +21,14 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = ` 𝙋𝙖𝙪𝙡𝙞𝙣𝙖 𝙎𝙩𝙤𝙧𝙚 💗
+    const str = ` @xιo.shoρρ 💗
 
 
- ▢ *Ey , Hola PausLovers, ${taguser} te presento el Pau bot*
+ ▢ *Ey , Hola PausLovers, ${taguser} te presento el Xio bot*
 
- ▢ *Owner:* 𝙋𝙖𝙪𝙡𝙞𝙣𝙖 💗
+ ▢ *Owner:* @xιo 💗
  ▢ *WA:* wa.me/56972062866
- ▢ *IG:* @paulina.storee
+ ▢ *IG:* @xιo.shoρρ
  ▢ *Uptime:* ${uptime}
  ▢ *Usuarios regs:* ${rtotalreg}
  ▢ *Usuarios totales:* ${rtotal}

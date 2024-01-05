@@ -37,11 +37,11 @@ global.suittag = ['56986469687'];
 global.prems = ['56986469687'];
 
 global.packname = 'Sticker';
-global.author = '𝙋𝙖𝙪𝙡𝙞𝙣𝙖 💗';
-global.wm = '𝙋𝙖𝙪𝙡𝙞𝙣𝙖 💗';
-global.titulowm = '𝙋𝙖𝙪𝙡𝙞𝙣𝙖 💗';
-global.titulowm2 = `𝙋𝙖𝙪𝙡𝙞𝙣𝙖 💗`
-global.igfg = '𝙋𝙖𝙪𝙡𝙞𝙣𝙖 💗';
+global.author = '@xιo.shoρρ💗';
+global.wm = '@xιo.shoρρ 💗';
+global.titulowm = '@xιo.shoρρ 💗';
+global.titulowm2 = `@xιo.shoρρ 💗`
+global.igfg = '@xιo.shoρρ';
 global.wait = '*[ ⏳ ] Cargando...*';
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
